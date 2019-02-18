@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# This script provides a fast way to enable or disable ArcherT2U USB adapter
+
+printf "T2U-DRIVER\n\nENABLE OR DISABLE? ('e'|'d') "
+
+read input
+
+case $input in
+    'e') 
+        sudo ifconfig ra0 up && sudo service networking restart && sudo service network-manager restart
+        printf "\nEnabled\n"
+        ;;
+     'd')
+        sudo ifconfig ra0 down && sudo service networking restart && sudo service network-manager restart
+        printf "\nDisabled\n"
+        ;;
+esac
+
+exit 1
