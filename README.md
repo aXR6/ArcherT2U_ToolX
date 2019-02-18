@@ -99,7 +99,7 @@ Reiniciar as placas:
 $ sudo /etc/init.d/networking restart
 ```
 
-# 5º - Instalação via Menu:
+# 5º - Instalação dos drivers via Menu:
 ```
 $ ./ToolX_ArcherT2U.sh
 ```
