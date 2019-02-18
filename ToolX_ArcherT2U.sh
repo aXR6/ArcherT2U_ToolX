@@ -27,13 +27,6 @@ done
 mt7610u()
 {
 echo "Instalando: mt7610u_wifi_sta_v3002_dpo_20130916"
-if [ -e "/etc/Wireless" ]
-  then
-    make
-    make install
-    cp RT2870STA.dat /etc/Wireless/RT2870STA/RT2870STA.dat
-    echo "você precisa reiniciar o sistema: reboot"
-  else
     mkdir /etc/Wireless
     mkdir /etc/Wireless/RT2870STA/
     make
