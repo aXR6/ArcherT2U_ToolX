@@ -12,7 +12,7 @@ Não seja sujo! Se achou gratuitamente, distribua gratuitamente repassando os de
 Funcional no: Linux toolx 4.19.0-kali1-amd64 #1 SMP Debian 4.19.13-1kali1 (2019-01-03) x86_64 GNU/Linux <br>
 Usuário ROOT necessário!! <br>
 
-# Fork:
+# Utilização dos seguintes repositórios:
 ```
 https://github.com/ivannieto/archer-t2u-ubuntu-installer
 https://github.com/chenhaiq/mt7610u_wifi_sta_v3002_dpo_20130916
@@ -24,10 +24,11 @@ Não obtive sucesso utilizando apenas um repositório, apenas com a junção (co
 Fiz esse script com o objetivo de automatizar o processo de compilação dos drivers.
 ```
 
-# 1º - Configurando as placas de rede ( COMANDO ):
+# 1º - Configurando as placas de rede ( COMANDO - EDITAR ):
 ```
 $ nano /etc/network/interfaces
 ```
+
 # 2º - Configurando as placas de rede ( OBS ):
 ```
 Obs.: Você deve configurar com os nomes que aparecem na saída de "ifconfig", no meu caso:
@@ -41,6 +42,7 @@ Obs.: Na configuração do arquivo "/etc/network/interfaces" eu define como "aut
 
 Obs.: Na configuração "estática" você deve setar as faixas de IP da sua rede.
 ```
+
 # 3º - Configurando as placas de rede ( CONFIGURAÇÃO - automática ):
 ```
 auto lo
@@ -59,6 +61,7 @@ auto wlp6s0
 allow-hotplug wlp6s0
 iface wlp6s0 inet dhcp
 ```
+
 # 3º - Configurando as placas de rede ( CONFIGURAÇÃO - estática ):
 ```
 auto lo
@@ -89,13 +92,19 @@ iface wlp6s0 inet static
     network 10.42.43.0
     broadcast 10.42.43.255
 ```
-# 4º - Configurando as placas de rede ( COMANDO ):
+
+# 4º - Configurando as placas de rede ( COMANDO - REINICIAR ):
 ```
-Resetar as placas:
+Reiniciar as placas:
 $ sudo /etc/init.d/networking restart
 ```
 
-# Modo de usar:
+# 5º - Instalação via Menu:
 ```
 $ ./ToolX_ArcherT2U.sh
+```
+
+# 6º - Modo de usar:
+```
+$ t2u-driver
 ```
