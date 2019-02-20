@@ -108,3 +108,6 @@ $ ./ToolX_ArcherT2U.sh
 ```
 $ t2u-driver
 ```
+# Mais explicações no YouTube:
+[![#InstallFEST[aXR6] - TP-Link Archer T2U - 2.4/5 GHz - Compilando e instalando o driver no Linux](https://i.imgur.com/Ui4FVcP.png)](https://www.youtube.com/watch?v=aso7VmVViIE&t=2s)
+
